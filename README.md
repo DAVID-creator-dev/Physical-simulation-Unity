@@ -1,31 +1,31 @@
-# Simulation Physique 3D
+# 3D Physics Simulation
 
-Ce projet est une **simulation physique** en 3D, développée autour des systèmes de collisions et de dynamique rigide.
-Il met en œuvre une chaîne complète de détection et de résolution physique : **broadphase → narrowphase → EPA → impulsions → friction et rotation angulaire**.
+This project is a 3D **physics simulation**, built around collision detection and rigid body dynamics systems.
+It implements a complete detection and physics resolution pipeline: **broadphase → narrowphase → EPA → impulses → friction and angular rotation**.
 
 ![Demo](https://media.githubusercontent.com/media/DAVID-creator-dev/Physical-simulation-Unity/refs/heads/main/docs/images/demo.gif)
 
 ---
 
-## Fonctionnalités principales
+## Main features
 
-* **Broadphase (AABB)** : détection rapide des paires potentielles de collisions.
-* **Narrowphase (GJK)** : calcul précis des intersections convexes.
-* **EPA (Expanding Polytope Algorithm)** : obtention de la normale et profondeur de pénétration.
-* **Résolution par impulsion** :
+* **Broadphase (AABB)**: fast detection of potential collision pairs.
+* **Narrowphase (GJK)**: precise computation of convex intersections.
+* **EPA (Expanding Polytope Algorithm)**: retrieval of the normal and penetration depth.
+* **Impulse-based resolution**:
 
-  * Calcul du point de contact (avec interpolation barycentrique).
-  * Application des impulsions linéaires et angulaires.
-  * Gestion du rebond (restitution).
-* **Frottement dynamique et statique** 
-* **Rotation angulaire** avec tenseur d’inertie.
+  * Contact point computation (with barycentric interpolation).
+  * Application of linear and angular impulses.
+  * Bounce handling (restitution).
+* **Dynamic and static friction**
+* **Angular rotation** with inertia tensor.
 
 ---
 
-## Commandes du jeu / simulation
+## Game / simulation controls
 
-| Touche            | Action                                    |
+| Key               | Action                                    |
 | ----------------- | ----------------------------------------- |
-| **Z / Q / S / D** | Déplacer le personnage                    |
-| **Espace**        | Tirer une boule                           |
-| **R**             | Sélectionner un objet                     |
+| **Z / Q / S / D**  | Move the character                        |
+| **Space**          | Fire a ball                               |
+| **R**              | Select an object                          |
